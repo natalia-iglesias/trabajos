@@ -1,0 +1,15 @@
+.div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+.name {
+    text-decoration-line: underline;
+    color: rgba(69, 3, 3, 0.971);
+}
+.info {
+    text-decoration-line: underline ;
+    color: rgb(27, 2, 61);
+}

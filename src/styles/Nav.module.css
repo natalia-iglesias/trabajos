@@ -1,0 +1,20 @@
+.span {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: rgb(10, 5, 5);
+    border-radius: solid  black;
+}
+.span:hover {
+    color:rgba(28, 8, 8, 0.762);
+    transition: 5ms;
+}
+.spancito {
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color:rgb(10, 5, 5);
+}
+.spancito:hover {
+    color:rgba(28, 8, 8, 0.762);
+    transition: 5ms;
+}
