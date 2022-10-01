@@ -25,7 +25,7 @@ function App() {
       .then((response) => {
         if(response.main !== undefined ){
          
-          const city= {
+          const ciudad= {
             min:Math.round(response.main.temp_min),
             max:Math.round(response.main.temp_max),
             img: response.weather[0].icon,
@@ -37,14 +37,19 @@ function App() {
             clouds: response.clouds.all,
             latitud: response.coord.lat,
             longitud: response.coord.lon
+          };
+          const reapeatedCity = cities.find((city)=> city.id === ciudad.id);
+          if(!reapeatedCity){
+            setCities((oldCities) => [...oldCities, ciudad]);
+          }else {
+            alert("La cuidad ya fue agregada");
           }
-          setCities(oldCities => [...oldCities, city]);
-        } else {
-          alert("cuidad no entrada");
+          
+        } else{
+          alert("cuidad no encontrada");
         }
 
-      })
-      .catch(e => console.log(e));
+      });
     }
 
     function onClose(id) {
@@ -76,4 +81,42 @@ function App() {
 
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
