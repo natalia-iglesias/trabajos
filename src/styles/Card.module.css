@@ -16,7 +16,8 @@
     
 }
 .name {
-    background-color: #0000004c;
+    background-color: #0000005b;
+    color: black;
     padding: 0.25rem 0.75rem;
     border-radius: 9999px;
     font-weight: 700;
@@ -28,6 +29,7 @@
     flex-direction: column;
    
     width: 3rem;
+    background-color: #0000005b;
     color: rgb(0, 0, 0);
     justify-content: center;
     text-align: center;
