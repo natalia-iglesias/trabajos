@@ -4,12 +4,15 @@
     text-align: center;
     
     
+    
 }
 .name {
     text-decoration-line: underline;
-    color: rgba(69, 3, 3, 0.971);
+    background-color: rgba(153, 147, 147, 0.507);
+    color: rgba(8, 0, 0, 0.971);
 }
 .info {
     text-decoration-line: underline ;
-    color: rgb(27, 2, 61);
+    background-color: rgba(153, 147, 147, 0.507);
+    color: rgb(2, 0, 5);
 }
