@@ -1,15 +1,10 @@
 import React, { useState } from 'react';
-import './App.css';
+import style from './styles/App.module.css';
 import { Route } from 'react-router-dom';
 import Nav from './components/Nav';
 import About from './components/About';
 import Cards from './components/Cards';
 import City from './components/City';
-
-
-
-
-
 
 
 
@@ -68,7 +63,7 @@ function App() {
      
   return (
    
-    <div >  
+    <div className= {style.bkg}>  
       <Route path='/' render={()=> <Nav onSearch={onSearch}/>}/>
       <Route path='/about' component={About}/>
       <Route exact path='/' render={()=> <Cards cities={cities} onClose={onClose}/>}/>

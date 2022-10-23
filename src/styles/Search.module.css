@@ -10,8 +10,13 @@
     font-size: 1.2rem;
     font-weight: 10;
     width: 15rem;
-    background-color: rgb(181, 179, 179);
+    background-color: transparent
 
+}
+
+
+.input::placeholder{
+    color: rgb(161, 149, 149);
 }
 
 
@@ -24,7 +29,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(181, 179, 179);
+    background-color: rgba(153, 147, 147, 0.507);
     transform: background-color 0.25s;
     cursor: pointer;
     color: black;
